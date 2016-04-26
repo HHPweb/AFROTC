@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!--http://css-tricks.com/889-creating-a-slick-auto-playing-featured-content-slider/ -->
+	<title>Featured Content Slider</title>
+    
+	<!--<script type="text/javascript" src="https://core.ecu.edu/baldwinc/jquery/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://core.ecu.edu/baldwinc/jquery/js/jquery.cycle.all.js.js"></script>
+	<script type="text/javascript" src="https://core.ecu.edu/baldwinc/jquery/js/jquery-easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="https://core.ecu.edu/baldwinc/jquery/js/jquery-easing-compatibility.1.2.pack.js"></script> -->
+	
+    
+	<script type="text/javascript">
+	
+	
+	$(document).ready(function() {
+		$('#panelContainer').cycle({ 
+    		fx:    'fade', 
+    		speed:  2500 
+ });
+	});
+	</script>
+<style type="text/css">
+*											{ margin: 0; padding: 0; }
+body 										{ font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+
+					  				  
+/*
+	UTILITY STYLES
+*/				  				  
+					  				  
+.floatLeft 									{ float: left; margin-right: 10px;}
+.floatRight									{ float: right; }
+.clear 										{ clear: both; }
+a											{ outline: none; }
+
+
+/*
+	PAGE STRUCTURE
+*/
+#panelContainer 									{ width: 960px; margin: 0px auto; position: relative; min-height: 250px;
+											  /*background: url(http://core.ecu.edu/hhp/baldwinc/web-banner/images/bg.png) top center;*/ }
+
+.panel										{width:960px; min-height: 250px;}
+
+
+/*
+	TYPOGRAPHY
+*/
+ul											{ list-style: square inside; }
+#page-wrap a a:visited								{ color: #729dff; text-decoration: none; }
+#page-wrap a:hover a:active							{ color: white; }
+blockquote									{ padding: 0 20px; margin-left: 20px; border-left: 20px solid #ccc; font-size: 14px; 
+									  		  font-family: Georgia, serif; font-style: italic; margin-top: 10px;}
+											  
+/* 
+	the infoPane
+*/
+.infoPane 									{ width: 350px; height:180px; position:absolute; top:30px; left: 570px; 
+											  background:url(http://www.ecu.edu/cs-hhp/customcf/hhptoday960/info-bg.png); background-repeat:no-repeat}
+.infoPane p									{padding-left: 21px;padding-right: 21px; color:#FFF;}
+.infoPane h2								{padding: 15px; color:#FFF; text-align:center;}
+.infoLink									{position: absolute;bottom: 10px;left: 5px}
+.infoLink a									{color:#FFF; font-weight:bold;}
+.infoPane h4								{font:Georgia, "Times New Roman", Times, serif;font-size:14px;padding: 15px; color:#FFF; text-align:left;}
+
+</style>
+</head>
+
+<body>
+<div id="panelContainer">
+	
+	<div class="panel" style="background-image:url(http://www.ecu.edu/cs-acad/afrotc/customcf/html/images/slider-images/cadre-wall.jpg);" title="">
+	</div><!--end panel-->
+	
+	<div class="panel" style="background-image:url(http://www.ecu.edu/cs-acad/afrotc/customcf/html/images/slider-images/afrotc-1.jpg);" title="">
+	</div><!--end panel-->
+	
+	<div class="panel" style="background-image:url(http://www.ecu.edu/cs-acad/afrotc/customcf/html/images/slider-images/afrotc-2.jpg);" title="">
+	</div><!--end panel-->
+	
+	<div class="panel" style="background-image:url(http://www.ecu.edu/cs-acad/afrotc/customcf/html/images/slider-images/afrotc-3.jpg);" title="">
+	</div><!--end panel-->
+	
+	<div class="panel" style="background-image:url(http://www.ecu.edu/cs-acad/afrotc/customcf/html/images/slider-images/afrotc-4.jpg);" title="">
+	</div><!--end panel-->
+	
+	<div class="panel" style="background-image:url(http://www.ecu.edu/cs-acad/afrotc/customcf/html/images/slider-images/afrotc-5.jpg);" title="">
+	</div><!--end panel-->
+    
+</div><!--end panelContainer-->
+</body>
+
+</html>
